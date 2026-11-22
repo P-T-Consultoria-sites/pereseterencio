@@ -29,7 +29,7 @@ const pt: BlogPost[] = [
     readingTime: "5 min",
     image: imgSpreadsheets,
     imageAlt: "Mesa com planilhas impressas e laptop mostrando dados",
-    body: `Pequenas empresas crescem em cima de planilhas. Funciona — até parar de funcionar.
+    body: `Pequenas empresas crescem em cima de planilhas. Funciona, até parar de funcionar.
 
 ## O sintoma é sempre o mesmo
 
@@ -81,7 +81,7 @@ Automações conectadas a dashboards transformam tarefas operacionais em fonte d
 
 ## Atendimento e suporte
 
-Respostas mais rápidas, triagem automática, base de conhecimento sempre atualizada — sem aumentar o time. Um chatbot para empresas bem treinado resolve 60% das dúvidas recorrentes sozinho.
+Respostas mais rápidas, triagem automática, base de conhecimento sempre atualizada, sem aumentar o time. Um chatbot para empresas bem treinado resolve 60% das dúvidas recorrentes sozinho.
 
 ## Análise de dados
 
@@ -105,7 +105,7 @@ Resumir reuniões, gerar rascunhos, padronizar comunicação. A automação com 
 
 ## Os sinais de que chegou a hora
 
-Quando retrabalho vira rotina, quando ninguém sabe qual planilha é a versão final, quando integrar dados de diferentes fontes leva dias — seu negócio precisa de software sob medida. Aplicativos empresariais eliminam essas fricções.
+Quando retrabalho vira rotina, quando ninguém sabe qual planilha é a versão final, quando integrar dados de diferentes fontes leva dias, seu negócio precisa de software sob medida. Aplicativos empresariais eliminam essas fricções.
 
 ## Software sob medida vs. ferramentas prontas
 
@@ -137,7 +137,7 @@ Comece pelo que dói mais: o processo que mais consome tempo, o erro que mais se
 
 ## Os primeiros 90 dias
 
-Mapeie, automatize o mais óbvio, centralize os dados e crie um hábito de olhar indicadores semanalmente. Em três meses você já opera de forma diferente — com mais clareza, mais velocidade e menos desperdício.`,
+Mapeie, automatize o mais óbvio, centralize os dados e crie um hábito de olhar indicadores semanalmente. Em três meses você já opera de forma diferente, com mais clareza, mais velocidade e menos desperdício.`,
   },
   {
     slug: "dashboard-empresarial-decisoes-estrategicas-para-pmes-7d1d9a",
@@ -174,7 +174,7 @@ const en: BlogPost[] = [
     readingTime: "5 min",
     image: imgSpreadsheets,
     imageAlt: "Desk with printed spreadsheets and a laptop showing data",
-    body: `Small businesses grow on top of spreadsheets. It works — until it doesn't.
+    body: `Small businesses grow on top of spreadsheets. It works, until it doesn't.
 
 ## The symptom is always the same
 
@@ -226,7 +226,7 @@ Automations connected to dashboards turn operational tasks into a source of info
 
 ## Customer service
 
-Faster responses, automatic triage, an always-updated knowledge base — without growing the team. A well-trained chatbot for business resolves 60% of recurring questions on its own.
+Faster responses, automatic triage, an always-updated knowledge base, without growing the team. A well-trained chatbot for business resolves 60% of recurring questions on its own.
 
 ## Data analysis
 
@@ -250,7 +250,7 @@ Summarize meetings, draft documents, standardize communication. AI-powered autom
 
 ## The signs it's time
 
-When rework becomes routine, when no one knows which spreadsheet is the final version, when integrating data from different sources takes days — your business needs custom software. Business apps eliminate these frictions.
+When rework becomes routine, when no one knows which spreadsheet is the final version, when integrating data from different sources takes days, your business needs custom software. Business apps eliminate these frictions.
 
 ## Custom software vs. off-the-shelf tools
 
@@ -282,7 +282,7 @@ Start with what hurts most: the process that consumes the most time, the error t
 
 ## The first 90 days
 
-Map it out, automate the most obvious, centralize the data and create a habit of looking at indicators weekly. In three months you're already operating differently — with more clarity, more speed and less waste.`,
+Map it out, automate the most obvious, centralize the data and create a habit of looking at indicators weekly. In three months you're already operating differently, with more clarity, more speed and less waste.`,
   },
   {
     slug: "business-dashboard-strategic-decisions-for-smes-7d1d9a",

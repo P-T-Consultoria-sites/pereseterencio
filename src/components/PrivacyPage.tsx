@@ -11,7 +11,7 @@ const PT: { titulo: string; atualizacao: string; blocos: Bloco[] } = {
     {
       titulo: "Quem somos",
       paragrafos: [
-        "A P&T Consultoria e Gestão de Soluções Inteligentes é a responsável pelos dados tratados neste site (pereseterencio.com.br), nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD).",
+        "A P&T Consultoria e Gestão de Soluções Inteligentes (CNPJ 13.687.854/0001-30) é a responsável pelos dados tratados neste site (pereseterencio.com.br), nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018, LGPD).",
         `Contato para assuntos de privacidade: ${CONTACT_EMAIL} ou WhatsApp ${WHATSAPP_DISPLAY}.`,
       ],
     },
@@ -71,7 +71,7 @@ const EN: typeof PT = {
     {
       titulo: "Who we are",
       paragrafos: [
-        "P&T Consultoria e Gestão de Soluções Inteligentes is responsible for the data handled on this website (pereseterencio.com.br), under the Brazilian General Data Protection Law (Law No. 13,709/2018, LGPD).",
+        "P&T Consultoria e Gestão de Soluções Inteligentes (CNPJ 13.687.854/0001-30) is responsible for the data handled on this website (pereseterencio.com.br), under the Brazilian General Data Protection Law (Law No. 13,709/2018, LGPD).",
         `Privacy contact: ${CONTACT_EMAIL} or WhatsApp ${WHATSAPP_DISPLAY}.`,
       ],
     },

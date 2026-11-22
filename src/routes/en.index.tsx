@@ -7,10 +7,10 @@ const t = getContent("en");
 export const Route = createFileRoute("/en/")({
   head: () => ({
     meta: [
-      { title: "P&T Consulting — Business Consulting, Automation & AI for Small Businesses" },
-      { name: "description", content: "Hands-on business consulting, financial management, process automation, AI for small businesses and custom digital solutions. Transform your operation." },
-      { property: "og:title", content: "P&T Consulting — Business Consulting, Automation & AI for Small Businesses" },
-      { property: "og:description", content: "Hands-on business consulting, financial management, process automation, AI for small businesses and custom digital solutions." },
+      { title: "Automation & AI for Small Businesses | P&T Consulting" },
+      { name: "description", content: "Hands-on business consulting, financial management, process automation and AI for small businesses. Talk to P&T." },
+      { property: "og:title", content: "Automation & AI for Small Businesses | P&T Consulting" },
+      { property: "og:description", content: "Hands-on business consulting, financial management, process automation and AI for small businesses. Talk to P&T." },
       { property: "og:url", content: "/en" },
       { property: "og:type", content: "website" },
     ],

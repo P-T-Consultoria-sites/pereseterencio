@@ -50,6 +50,7 @@ export function BlogIndexPage({ t }: { t: SiteContent }) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder={t.blog.searchPlaceholder}
+                aria-label={t.blog.searchPlaceholder}
                 className="pl-9"
               />
             </div>

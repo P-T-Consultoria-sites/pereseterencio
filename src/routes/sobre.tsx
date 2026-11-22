@@ -7,10 +7,10 @@ const t = getContent("pt");
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre a P&T — Consultoria e Gestão para Pequenas Empresas" },
-      { name: "description", content: "Conheça a P&T Consultoria: consultoria empresarial, gestão financeira empresarial, automação de processos, inteligência artificial e desenvolvimento de aplicativos para micro e pequenas empresas." },
-      { property: "og:title", content: "Sobre a P&T — Consultoria e Gestão para Pequenas Empresas" },
-      { property: "og:description", content: "Conheça a P&T Consultoria: consultoria empresarial, gestão financeira empresarial, automação de processos, inteligência artificial e desenvolvimento de aplicativos para micro e pequenas empresas." },
+      { title: "Sobre a P&T | Consultoria e gestão para pequenas empresas" },
+      { name: "description", content: "Conheça a P&T: consultoria empresarial, gestão financeira, automação e IA para micro e pequenas empresas, com implementação prática." },
+      { property: "og:title", content: "Sobre a P&T | Consultoria e gestão para pequenas empresas" },
+      { property: "og:description", content: "Conheça a P&T: consultoria empresarial, gestão financeira, automação e IA para micro e pequenas empresas, com implementação prática." },
       { property: "og:url", content: "/sobre" },
       { property: "og:type", content: "website" },
     ],

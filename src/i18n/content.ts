@@ -175,7 +175,7 @@ const pt: SiteContent = {
   positioning: {
     eyebrow: "Nosso posicionamento",
     title: "Diferente de consultorias tradicionais, nós implementamos.",
-    body: "Não paramos em diagnósticos e relatórios. Atuamos lado a lado com você criando processos, automações, dashboards e aplicativos que transformam estratégia em resultado — com tecnologia acessível e acompanhamento especializado.",
+    body: "Não paramos em diagnósticos e relatórios. Atuamos lado a lado com você criando processos, automações, dashboards e aplicativos que transformam estratégia em resultado, com tecnologia acessível e acompanhamento especializado.",
     bullets: [
       "Consultoria com implementação prática",
       "Soluções personalizadas para cada negócio",
@@ -192,7 +192,7 @@ const pt: SiteContent = {
         icon: "briefcase",
         title: "Consultoria com implementação",
         description:
-          "Diagnóstico, planejamento financeiro empresarial e execução conjunta — não só apontamos problemas, resolvemos com consultoria para pequenas empresas.",
+          "Diagnóstico, planejamento financeiro empresarial e execução conjunta. Não só apontamos problemas: resolvemos com consultoria para pequenas empresas.",
       },
       {
         icon: "wallet",
@@ -356,7 +356,7 @@ const pt: SiteContent = {
     ],
   },
   about: {
-    title: "Estratégia, implementação e tecnologia — em um só time.",
+    title: "Estratégia, implementação e tecnologia em um só time.",
     subtitle:
       "A P&T nasceu para resolver o que consultorias tradicionais não resolvem: tirar o plano do papel e fazer acontecer com consultoria empresarial, automação e IA para pequenas empresas.",
     story: {
@@ -441,7 +441,7 @@ const en: SiteContent = {
   positioning: {
     eyebrow: "Our positioning",
     title: "Unlike traditional consultancies, we implement.",
-    body: "We don't stop at diagnoses and reports. We work alongside you to design processes, automations, dashboards and apps that turn strategy into results — with accessible technology and expert follow-through.",
+    body: "We don't stop at diagnoses and reports. We work alongside you to design processes, automations, dashboards and apps that turn strategy into results, with accessible technology and expert follow-through.",
     bullets: [
       "Consulting that ships, not just advises",
       "Personalized solutions for each business",
@@ -458,7 +458,7 @@ const en: SiteContent = {
         icon: "briefcase",
         title: "Consulting with implementation",
         description:
-          "Diagnosis, financial planning and joint execution — we don't only point at problems, we solve them with consulting for small businesses.",
+          "Diagnosis, financial planning and joint execution. We don't only point at problems: we solve them with consulting for small businesses.",
       },
       {
         icon: "wallet",
@@ -622,14 +622,14 @@ const en: SiteContent = {
     ],
   },
   about: {
-    title: "Strategy, implementation and technology — in one team.",
+    title: "Strategy, implementation and technology in one team.",
     subtitle:
       "P&T was born to solve what traditional consultancies don't: turning the plan into reality with business consulting, automation and AI for small businesses.",
     story: {
       title: "Our story",
       paragraphs: [
         "We've lived the entrepreneur reality: too many spreadsheets, people-dependent processes, decisions made in the dark and not enough time. P&T was born to change that.",
-        "We combine business consulting, financial management and software development to deliver complete solutions — from diagnosis to a running operation.",
+        "We combine business consulting, financial management and software development to deliver complete solutions, from diagnosis to a running operation.",
       ],
     },
     mission: {

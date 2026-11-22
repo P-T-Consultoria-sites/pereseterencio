@@ -7,9 +7,9 @@ const t = getContent("en");
 export const Route = createFileRoute("/en/about")({
   head: () => ({
     meta: [
-      { title: "About P&T — Business Consulting & Management for Small Companies" },
+      { title: "About P&T | Consulting for Small Businesses" },
       { name: "description", content: "Learn about P&T Consulting: business consulting, financial management, process automation, AI and custom app development for small businesses." },
-      { property: "og:title", content: "About P&T — Business Consulting & Management for Small Companies" },
+      { property: "og:title", content: "About P&T | Consulting for Small Businesses" },
       { property: "og:description", content: "Learn about P&T Consulting: business consulting, financial management, process automation, AI and custom app development for small businesses." },
       { property: "og:url", content: "/en/about" },
       { property: "og:type", content: "website" },

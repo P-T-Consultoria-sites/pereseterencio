@@ -7,9 +7,9 @@ const t = getContent("en");
 export const Route = createFileRoute("/en/blog/")({
   head: () => ({
     meta: [
-      { title: "Blog — Management, Automation & AI for Business | P&T Consulting" },
+      { title: "Blog: Management, Automation & AI | P&T Consulting" },
       { name: "description", content: "Articles on business consulting, process automation, AI for small businesses, financial management and digital solutions." },
-      { property: "og:title", content: "Blog — Management, Automation & AI for Business | P&T Consulting" },
+      { property: "og:title", content: "Blog: Management, Automation & AI | P&T Consulting" },
       { property: "og:description", content: "Articles on business consulting, process automation, AI for small businesses, financial management and digital solutions." },
       { property: "og:url", content: "/en/blog" },
       { property: "og:type", content: "website" },

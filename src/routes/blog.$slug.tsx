@@ -26,10 +26,10 @@ export const Route = createFileRoute("/blog/$slug")({
 
   head: ({ loaderData, params }) => {
     const post = loaderData?.post;
-    if (!post) return { meta: [{ title: `Blog — ${t.brand.short}` }] };
+    if (!post) return { meta: [{ title: `Blog | P&T` }] };
     return {
       meta: [
-        { title: `${post.title} — ${t.brand.short}` },
+        { title: `${post.title} | P&T` },
         { name: "description", content: post.summary },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.summary },

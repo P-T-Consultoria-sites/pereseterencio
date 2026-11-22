@@ -7,10 +7,10 @@ const t = getContent("pt");
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Blog — Gestão, Automação e IA para Empresas | P&T Consultoria" },
-      { name: "description", content: "Artigos sobre consultoria empresarial, automação de processos, inteligência artificial para pequenas empresas, gestão financeira empresarial e soluções digitais." },
-      { property: "og:title", content: "Blog — Gestão, Automação e IA para Empresas | P&T Consultoria" },
-      { property: "og:description", content: "Artigos sobre consultoria empresarial, automação de processos, inteligência artificial para pequenas empresas, gestão financeira empresarial e soluções digitais." },
+      { title: "Blog: gestão, automação e IA para empresas | P&T" },
+      { name: "description", content: "Artigos sobre consultoria, automação de processos, inteligência artificial para pequenas empresas, gestão financeira e soluções digitais." },
+      { property: "og:title", content: "Blog: gestão, automação e IA para empresas | P&T" },
+      { property: "og:description", content: "Artigos sobre consultoria, automação de processos, inteligência artificial para pequenas empresas, gestão financeira e soluções digitais." },
       { property: "og:url", content: "/blog" },
       { property: "og:type", content: "website" },
     ],
