@@ -10,6 +10,8 @@ export const Route = createFileRoute("/blog/$slug")({
     const staticPost = getPost("pt", params.slug);
     if (staticPost) {
       const staticMap: Record<string, string> = {
+        "dashboard-empresarial-decisoes-estrategicas-para-pmes-7d1d9a": "business-dashboard-strategic-decisions-for-smes-7d1d9a",
+        "dobre-a-produtividade-de-sua-pequena-empresa-com-automacao-e-ia-eec52c": "double-your-small-business-s-productivity-with-automation-and-ai-eec52c",
         "alem-das-planilhas": "beyond-spreadsheets",
         "automacao-pequenas-empresas": "automation-for-small-business",
         "ia-na-rotina-da-empresa": "ai-in-business-routine",

@@ -4,7 +4,7 @@ Site da P&T Gestão de Soluções Inteligentes, em português e inglês, hospeda
 Migrado do Lovable em novembro de 2026. O site publicado é a pasta **`docs/`**; o resto é o código para gerá-la.
 
 ## Páginas
-Início, Sobre, Blog e 5 artigos, em PT (`/`) e EN (`/en`). Total de 16 páginas.
+Início, Sobre, Blog e 7 artigos, em PT (`/`) e EN (`/en`). Total de 20 páginas. Os 2 artigos mais recentes foram gerados pela IA no Lovable e copiados do banco de dados para `src/content/blog.ts`.
 
 ## Como editar textos, artigos e imagens
 | O que mudar | Onde |
