@@ -1,0 +1,1 @@
+import{R as t,j as s,t as r}from"./index-AEXTKMwt.js";import{B as e}from"./BlogPostPage-BcCEl5rY.js";import"./SiteLayout-DR6BZ5BL.js";import"./badge-DZOwZ-7g.js";function i(){const{post:o}=t.useLoaderData();return s.jsx(e,{t:r,post:o})}export{i as component};

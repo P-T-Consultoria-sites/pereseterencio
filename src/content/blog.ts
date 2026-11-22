@@ -308,6 +308,22 @@ Map it out, automate the most obvious, centralize the data and create a habit of
   },
 ];
 
+// Título que aparece no Google e na aba do navegador (até 60 caracteres).
+// Artigos que não estão aqui usam "título do artigo | P&T". O título dentro da página não muda.
+const SEO_TITLES: Record<string, string> = {
+  "alem-das-planilhas": "Além das planilhas: clareza para pequenas empresas | P&T",
+  "software-sob-medida": "Software sob medida: quando sua empresa precisa | P&T",
+  "transformacao-digital-pequenas-empresas": "Transformação digital para pequenas empresas | P&T",
+  "dobre-a-produtividade-de-sua-pequena-empresa-com-automacao-e-ia-eec52c": "Dobre a produtividade com automação e IA | P&T",
+  "custom-software": "Custom software: when your business needs it | P&T",
+  "digital-transformation-small-business": "Digital transformation for small businesses | P&T",
+  "double-your-small-business-s-productivity-with-automation-and-ai-eec52c": "Double your productivity with automation and AI | P&T",
+};
+
+export function seoTitle(post: BlogPost): string {
+  return SEO_TITLES[post.slug] ?? `${post.title} | P&T`;
+}
+
 export const posts: Record<Locale, BlogPost[]> = { pt, en };
 
 export function getPosts(locale: Locale): BlogPost[] {

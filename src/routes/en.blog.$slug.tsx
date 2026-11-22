@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { BlogPostPage } from "@/components/BlogPostPage";
 import { getContent } from "@/i18n/content";
-import { getPost } from "@/content/blog";
+import { getPost, seoTitle } from "@/content/blog";
 
 const t = getContent("en");
 
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
     if (!post) return { meta: [{ title: `Blog | P&T` }] };
     return {
       meta: [
-        { title: `${post.title} | P&T` },
+        { title: seoTitle(post) },
         { name: "description", content: post.summary },
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.summary },
