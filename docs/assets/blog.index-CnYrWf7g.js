@@ -1,0 +1,1 @@
+import{j as t,g as o}from"./index-BMC_l-H2.js";import{B as p}from"./BlogIndexPage-yRSn7RfX.js";import"./SiteLayout-7Q9BDCM9.js";import"./input-CjkCVpex.js";import"./badge-DRH2Ujph.js";const m=o("pt"),a=()=>t.jsx(p,{t:m});export{a as component};

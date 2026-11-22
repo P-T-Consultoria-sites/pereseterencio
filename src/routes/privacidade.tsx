@@ -4,7 +4,7 @@ import { getContent } from "@/i18n/content";
 
 const t = getContent("pt");
 const DESC =
-  "Como o site da P&T trata dados pessoais: sem cookies de rastreamento, e o contato acontece pelo WhatsApp ou por e-mail.";
+  "Como o site da P&T trata dados pessoais: sem cookies, e o contato acontece pelo WhatsApp ou por e-mail.";
 
 export const Route = createFileRoute("/privacidade")({
   head: () => ({

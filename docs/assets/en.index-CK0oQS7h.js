@@ -1,1 +1,0 @@
-import{j as o,g as t}from"./index-AEXTKMwt.js";import{H as m}from"./HomePage-CALBJ5Zo.js";import"./SiteLayout-DR6BZ5BL.js";import"./input-_NhvF-Ml.js";import"./site-config-CjS3-ddo.js";const n=t("en"),a=()=>o.jsx(m,{t:n});export{a as component};

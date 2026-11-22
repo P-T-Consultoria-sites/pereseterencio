@@ -12,6 +12,7 @@ import type { ReactNode } from "react";
 import { Toaster } from "sonner";
 
 import appCss from "../styles.css?url";
+import { CF_BEACON_TOKEN } from "../lib/site-config";
 
 function NotFoundComponent() {
   return (
@@ -100,6 +101,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     scripts: [
+      {
+        type: "module",
+        src: "https://static.cloudflareinsights.com/beacon.min.js",
+        "data-cf-beacon": JSON.stringify({ token: CF_BEACON_TOKEN }),
+      },
       {
         type: "application/ld+json",
         children: JSON.stringify({

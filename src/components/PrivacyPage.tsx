@@ -18,7 +18,7 @@ const PT: { titulo: string; atualizacao: string; blocos: Bloco[] } = {
     {
       titulo: "O que coletamos",
       paragrafos: [
-        "Este site não cria conta e não usa cookies de rastreamento nem ferramentas de estatística. O formulário de contato não envia nada para os nossos servidores: ele monta a sua mensagem no seu aparelho e abre o WhatsApp para você enviá-la.",
+        "Este site não cria conta e não usa cookies. Para contar visitas e medir a velocidade das páginas, usamos o Cloudflare Web Analytics, que não usa cookies nem identifica visitantes individualmente: ele recebe dados técnicos, como a página visitada, o tipo de navegador e o país aproximado. O formulário de contato não envia nada para os nossos servidores: ele monta a sua mensagem no seu aparelho e abre o WhatsApp para você enviá-la.",
         "Os dados só chegam até nós quando você envia a mensagem pelo WhatsApp ou escreve para o nosso e-mail. Nesse caso, recebemos o que você escrever (por exemplo, nome, empresa, e-mail e o assunto), além do número e do nome do perfil no WhatsApp.",
       ],
     },
@@ -37,6 +37,7 @@ const PT: { titulo: string; atualizacao: string; blocos: Bloco[] } = {
       titulo: "Serviços de terceiros que aparecem no site",
       itens: [
         "Google Fonts: as letras do site são carregadas dos servidores do Google, que podem registrar o endereço IP de quem visita.",
+        "Cloudflare Web Analytics: conta as visitas e mede a velocidade do site, sem cookies e sem identificar quem visita.",
         "GitHub Pages: hospeda o site e mantém registros técnicos de acesso, como qualquer hospedagem.",
         "WhatsApp e Instagram (Meta): só têm contato com você se você clicar nos botões deles.",
       ],
@@ -58,7 +59,7 @@ const PT: { titulo: string; atualizacao: string; blocos: Bloco[] } = {
     {
       titulo: "Mudanças nesta política",
       paragrafos: [
-        "Se o site passar a usar estatísticas, cookies ou outro tipo de coleta, esta página será atualizada antes, e a data no topo mostra a última revisão.",
+        "Se o site passar a usar cookies, formulários próprios ou outro tipo de coleta, esta página será atualizada antes, e a data no topo mostra a última revisão.",
       ],
     },
   ],
@@ -78,7 +79,7 @@ const EN: typeof PT = {
     {
       titulo: "What we collect",
       paragrafos: [
-        "This website has no accounts and does not use tracking cookies or analytics tools. The contact form does not send anything to our servers: it builds your message on your device and opens WhatsApp so you can send it yourself.",
+        "This website has no accounts and does not use cookies. To count visits and measure page speed we use Cloudflare Web Analytics, which does not use cookies or identify individual visitors: it receives technical data such as the page visited, the browser type and the approximate country. The contact form does not send anything to our servers: it builds your message on your device and opens WhatsApp so you can send it yourself.",
         "Data only reaches us when you send the message through WhatsApp or write to our email. In that case we receive what you write (for example name, company, email and subject), plus your WhatsApp number and profile name.",
       ],
     },
@@ -97,6 +98,7 @@ const EN: typeof PT = {
       titulo: "Third-party services on the site",
       itens: [
         "Google Fonts: the typefaces of the site are loaded from Google servers, which may record the visitor's IP address.",
+        "Cloudflare Web Analytics: counts visits and measures site speed, without cookies and without identifying visitors.",
         "GitHub Pages: hosts the website and keeps technical access logs, like any hosting service.",
         "WhatsApp and Instagram (Meta): only reach you if you click their buttons.",
       ],
@@ -118,7 +120,7 @@ const EN: typeof PT = {
     {
       titulo: "Changes to this policy",
       paragrafos: [
-        "If the site starts using analytics, cookies or any other collection, this page will be updated first, and the date at the top shows the latest review.",
+        "If the site starts using cookies, its own forms or any other collection, this page will be updated first, and the date at the top shows the latest review.",
       ],
     },
   ],
