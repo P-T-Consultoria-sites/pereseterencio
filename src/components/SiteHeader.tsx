@@ -41,7 +41,7 @@ export function SiteHeader({ t }: { t: SiteContent }) {
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:h-20 lg:px-8">
         <a href={t.paths.home} className="flex items-center gap-2.5">
-          <img src={logoUrl} alt={t.brand.full} className="h-9 w-9 rounded-full object-cover lg:h-10 lg:w-10" />
+          <img src={logoUrl} alt={t.brand.full} width={40} height={40} className="h-9 w-9 rounded-full object-cover lg:h-10 lg:w-10" />
           <span className="hidden font-display text-sm font-semibold tracking-tight text-foreground sm:inline-block lg:text-base">
             {t.brand.full}
           </span>

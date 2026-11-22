@@ -28,7 +28,7 @@ export function SiteFooter({ t }: { t: SiteContent }) {
         <div className="grid gap-10 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <a href={t.paths.home} className="flex items-center gap-2.5">
-              <img src={logoUrl} alt={t.brand.full} className="h-10 w-10 rounded-full object-cover" />
+              <img src={logoUrl} alt={t.brand.full} width={40} height={40} className="h-10 w-10 rounded-full object-cover" />
               <span className="font-display text-base font-semibold text-foreground">
                 {t.brand.short}
               </span>

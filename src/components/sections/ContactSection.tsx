@@ -83,7 +83,7 @@ export function ContactSection({ t }: { t: SiteContent }) {
                     </p>
                     {c.label === "WhatsApp" ? (
                       <a
-                        href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(pt ? "Olá! Vim pelo site da P&T e gostaria de conversar sobre a minha empresa." : "Hello! I found the P&T website and would like to talk about my business.")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"

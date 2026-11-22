@@ -315,6 +315,7 @@ const pt: SiteContent = {
         links: [
           { label: "Sobre", href: "/sobre" },
           { label: "Blog", href: "/blog" },
+          { label: "Privacidade", href: "/privacidade" },
           { label: "Contato", href: "/#contato" },
         ],
       },
@@ -580,6 +581,7 @@ const en: SiteContent = {
         links: [
           { label: "About", href: "/en/about" },
           { label: "Blog", href: "/en/blog" },
+          { label: "Privacy", href: "/en/privacy" },
           { label: "Contact", href: "/en#contact" },
         ],
       },

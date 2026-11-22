@@ -36,6 +36,7 @@ writeFileSync(join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: https:
 writeFileSync(join(OUT, "404.html"), `<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Página não encontrada | P&amp;T</title>
+<link rel="icon" href="/favicon.ico" sizes="any"><meta name="robots" content="noindex">
 <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fcfeff;color:#071027;font-family:system-ui,sans-serif;text-align:center;padding:24px}
 h1{font-size:72px;margin:0;color:#18188c}p{color:#56647a}a{display:inline-block;margin:8px;padding:12px 22px;border-radius:10px;background:#18188c;color:#fff;text-decoration:none;font-weight:600}</style></head>
 <body><main><h1>404</h1><p>Não encontramos esta página. / We couldn't find this page.</p>

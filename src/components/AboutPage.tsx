@@ -85,6 +85,8 @@ export function AboutPage({ t }: { t: SiteContent }) {
                   <img
                     src={m.photo}
                     alt={m.name}
+                    width={80}
+                    height={80}
                     className="mx-auto h-20 w-20 rounded-full object-cover"
                     loading="lazy"
                   />

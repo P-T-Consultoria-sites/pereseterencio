@@ -1,5 +1,12 @@
 import type { SiteContent } from "@/i18n/content";
 
+// Tamanho real de cada logo (evita a página "pular" enquanto carrega)
+const LOGO_DIMS: Record<string, [number, number]> = {
+  "nutroeste.png": [225, 225], "sebrae.png": [243, 208], "catiana.webp": [1000, 563],
+  "love-to-langa.jpg": [720, 432], "nutroeste-paraguai.png": [171, 38], "cecilia-flores.webp": [770, 771],
+};
+const dimsDe = (url: string): [number, number] => LOGO_DIMS[url.split("/").pop() ?? ""] ?? [160, 64];
+
 export function ClientsSection({ t }: { t: SiteContent }) {
   const logos = t.clients.logos;
   // Duplicate the list so the translateX(-50% -> 0) loop is seamless.
@@ -45,6 +52,8 @@ export function ClientsSection({ t }: { t: SiteContent }) {
                   <img
                     src={logo.logo}
                     alt={logo.name}
+                    width={dimsDe(logo.logo)[0]}
+                    height={dimsDe(logo.logo)[1]}
                     className="max-h-12 w-auto object-contain sm:max-h-16"
                     loading="lazy"
                   />
