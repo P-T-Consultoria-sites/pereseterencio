@@ -1,73 +1,57 @@
 import { useState, type FormEvent } from "react";
-import { Mail, Clock } from "lucide-react";
+import { Mail, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import type { SiteContent } from "@/i18n/content";
-import { WEB3FORMS_KEY, CONTACT_EMAIL } from "@/lib/site-config";
+import { WHATSAPP_NUMBER, WHATSAPP_DISPLAY } from "@/lib/site-config";
 
-const channelIcons = [Mail, Clock];
+const channelIcons = [Mail, Clock, MessageCircle];
 
 export function ContactSection({ t }: { t: SiteContent }) {
   const anchor = t.locale === "pt" ? "contato" : "contact";
   const [submitting, setSubmitting] = useState(false);
+  const pt = t.locale === "pt";
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  function openWhatsApp(text: string) {
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener");
+  }
+
+  // Monta a mensagem pronta e abre o WhatsApp da P&T. Nada é enviado antes de a pessoa tocar em "enviar" no WhatsApp.
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const fd = new FormData(form);
+    const name = String(fd.get("name") ?? "").trim();
+    const company = String(fd.get("company") ?? "").trim();
+    const email = String(fd.get("email") ?? "").trim();
+    const message = String(fd.get("message") ?? "").trim();
+    const lines = pt
+      ? [
+          `Olá! Sou ${name}${company ? `, da empresa ${company}` : ""}.`,
+          "",
+          message,
+          ...(email ? ["", `Meu e-mail: ${email}`] : []),
+          "",
+          "(Mensagem enviada pelo site pereseterencio.com.br)",
+        ]
+      : [
+          `Hello! I'm ${name}${company ? ` from ${company}` : ""}.`,
+          "",
+          message,
+          ...(email ? ["", `My email: ${email}`] : []),
+          "",
+          "(Message sent from pereseterencio.com.br)",
+        ];
     setSubmitting(true);
-    try {
-      const data = {
-        name: String(fd.get("name") ?? ""),
-        company: String(fd.get("company") ?? ""),
-        email: String(fd.get("email") ?? ""),
-        message: String(fd.get("message") ?? ""),
-      };
-      if (!WEB3FORMS_KEY) {
-        // Sem chave configurada: abre o e-mail do visitante com a mensagem pronta.
-        const subject = encodeURIComponent(`Contato pelo site – ${data.name}`);
-        const body = encodeURIComponent(`${data.message}
-
-${data.name}${data.company ? " – " + data.company : ""}
-${data.email}`);
-        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-        setSubmitting(false);
-        return;
-      }
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `Contato pelo site – ${data.name}`,
-          from_name: "Site P&T",
-          name: data.name,
-          company: data.company,
-          email: data.email,
-          message: data.message,
-          idioma: t.locale,
-          pagina: typeof window !== "undefined" ? window.location.pathname : "",
-        }),
-      });
-      const json = await res.json();
-      if (!res.ok || !json.success) throw new Error(json.message || "Falha no envio");
-      toast.success(t.contact.form.success);
-      form.reset();
-    } catch (err) {
-      console.error(err);
-      toast.error(
-        t.locale === "pt"
-          ? "Não foi possível enviar sua mensagem. Tente novamente."
-          : "We couldn't send your message. Please try again."
-      );
-    } finally {
-      setSubmitting(false);
-    }
+    openWhatsApp(lines.join(String.fromCharCode(10)));
+    toast.success(t.contact.form.success);
+    form.reset();
+    setSubmitting(false);
   }
-
 
   return (
     <section
@@ -97,7 +81,18 @@ ${data.email}`);
                     <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                       {c.label}
                     </p>
-                    <p className="text-sm font-medium text-foreground">{c.value}</p>
+                    {c.label === "WhatsApp" ? (
+                      <a
+                        href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+                      >
+                        {WHATSAPP_DISPLAY}
+                      </a>
+                    ) : (
+                      <p className="text-sm font-medium text-foreground">{c.value}</p>
+                    )}
                   </div>
                 </li>
               );
@@ -121,7 +116,7 @@ ${data.email}`);
             </div>
             <div className="sm:col-span-2">
               <Label htmlFor="email">{t.contact.form.email}</Label>
-              <Input id="email" name="email" type="email" required className="mt-1.5" />
+              <Input id="email" name="email" type="email" className="mt-1.5" />
             </div>
             <div className="sm:col-span-2">
               <Label htmlFor="message">{t.contact.form.message}</Label>

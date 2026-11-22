@@ -12,7 +12,7 @@ Início, Sobre, Blog e 7 artigos, em PT (`/`) e EN (`/en`). Total de 20 páginas
 | Textos do site (PT e EN), serviços, clientes | `src/i18n/content.ts` |
 | Artigos do blog | `src/content/blog.ts` |
 | Logos e fotos | `public/img/` (e os apontamentos em `src/assets/*.asset.json`) |
-| Chave do formulário e e-mail de contato | `src/lib/site-config.ts` |
+| WhatsApp e e-mail de contato | `src/lib/site-config.ts` |
 | Cores e fontes | `src/styles.css` |
 
 ## Como publicar uma mudança
@@ -24,11 +24,9 @@ npm run build:pages  (gera a pasta docs/ atualizada)
 Depois envie as mudanças ao GitHub (`git add -A`, `git commit`, `git push`). O site atualiza em cerca de 1 minuto.
 
 ## Formulário de contato
-Usa o **Web3Forms** (grátis, 250 mensagens por mês). Para ativar:
-1. Em web3forms.com, informe o e-mail que deve receber as mensagens e copie a "Access Key".
-2. Cole a chave em `src/lib/site-config.ts` (`WEB3FORMS_KEY`) e publique.
-
-Enquanto a chave estiver vazia, o botão "Enviar" abre o e-mail do visitante com a mensagem pronta para `contato@pereseterencio.com.br`.
+O botão "Enviar pelo WhatsApp" monta a mensagem (nome, empresa, texto e e-mail) e abre o WhatsApp da P&T com ela pronta; a pessoa só toca em enviar.
+O número fica em `src/lib/site-config.ts` (`WHATSAPP_NUMBER`, com 55 + DDD) e o texto exibido em `WHATSAPP_DISPLAY`.
+Para trocar o número, altere também a linha "WhatsApp" dos canais em `src/i18n/content.ts` (português e inglês).
 
 ## O que existia no Lovable e NÃO foi migrado
 - Blog automático com IA (sugestão semanal de tema + aprovação por e-mail).

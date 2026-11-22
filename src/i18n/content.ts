@@ -296,12 +296,13 @@ const pt: SiteContent = {
       company: "Empresa",
       email: "E-mail",
       message: "Como podemos ajudar?",
-      submit: "Enviar mensagem",
-      success: "Recebemos sua mensagem. Em breve entraremos em contato.",
+      submit: "Enviar pelo WhatsApp",
+      success: "Abrindo o WhatsApp com a sua mensagem pronta. É só tocar em enviar.",
     },
     channels: [
       { label: "E-mail", value: "contato@pereseterencio.com.br" },
       { label: "Atendimento", value: "Seg a Sex, 9h–18h" },
+      { label: "WhatsApp", value: "(62) 99925-6125" },
     ],
   },
   footer: {
@@ -560,12 +561,13 @@ const en: SiteContent = {
       company: "Company",
       email: "Email",
       message: "How can we help?",
-      submit: "Send message",
-      success: "We received your message. We'll be in touch shortly.",
+      submit: "Send via WhatsApp",
+      success: "Opening WhatsApp with your message ready. Just tap send.",
     },
     channels: [
       { label: "Email", value: "contato@pereseterencio.com.br" },
       { label: "Hours", value: "Mon–Fri, 9am–6pm" },
+      { label: "WhatsApp", value: "(62) 99925-6125" },
     ],
   },
   footer: {
